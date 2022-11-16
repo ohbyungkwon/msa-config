@@ -8,4 +8,7 @@ spring:
     config:
       server:
         git:
-          uri: file://Users/obyeong-gwon/git-local-repo
+          uri: https://github.com/ohbyungkwon/msa-config-store.git
+          #username: !!!!
+          #passphrase: !!!
+          #uri: file://Users/obyeong-gwon/git-local-repo
