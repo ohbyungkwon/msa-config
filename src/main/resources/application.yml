@@ -7,8 +7,16 @@ spring:
   cloud:
     config:
       server:
+        encrypt:
+          enabled: false
         git:
           uri: https://github.com/ohbyungkwon/msa-config-store.git
           #username: !!!!
           #passphrase: !!!
           #uri: file://Users/obyeong-gwon/git-local-repo
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: refresh, health, beans, bus-refresh, env
